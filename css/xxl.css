@@ -1,7 +1,7 @@
 header{
     width: 100%;
     height: 60px;
-     
+    background-color: white;
 }
 
 header .banner{
@@ -9,8 +9,55 @@ header .banner{
     height: 100%;
 }
 
-header img {
+header .banner img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+header .menu1{
+    width: 100%;
+    height: 68px;
+    padding: 0 16px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    background-color: lime;
+}
+
+header .menu1 .logo{
+    background-color: aqua;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    margin-left: 20px;
+}
+
+header .menu1 .search{
+    background-color: deeppink;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+}
+
+header .menu1 .search form{
+    background-color: gold;
+    height: 100%;
+}
+header .menu1 .search form label{
+    background-color: blueviolet;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+}
+
+header .menu1 .search form label input{
+    width: 600px;
+    background-color: red;
+    height: 44px;
+    outline: none;
+    border: none;
+    
 }
