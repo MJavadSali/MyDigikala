@@ -22,11 +22,9 @@ header .menu1{
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
-    background-color: lime;
 }
 
 header .menu1 .logo{
-    background-color: aqua;
     height: 100%;
     align-items: center;
     display: flex;
@@ -34,7 +32,6 @@ header .menu1 .logo{
 }
 
 header .menu1 .search{
-    background-color: deeppink;
     height: 100%;
     display: flex;
     align-items: center;
@@ -42,22 +39,94 @@ header .menu1 .search{
 }
 
 header .menu1 .search form{
-    background-color: gold;
     height: 100%;
 }
 header .menu1 .search form label{
-    background-color: blueviolet;
     height: 100%;
     display: flex;
     align-items: center;
-    border-radius: 8px;
+    
+    position: relative;
 }
-
+header .menu1 .search form label svg{
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
 header .menu1 .search form label input{
     width: 600px;
-    background-color: red;
     height: 44px;
     outline: none;
     border: none;
+    border-radius: 8px;
+    padding-right: 56px;
+}
+
+header .menu1 .search form label input img{
+    display: none;
+}
+
+
+header .menu1 .buttons{
+    margin-right: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 8px;    
+}
+header .menu1 .buttons a:first-child{
+    border:1px solid #a1a3a8;
+    border-radius:8px;
+    display: flex;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    text-decoration: none;
+    color: black;
+    padding: 0 16px;
     
+}
+
+header .menu1 .buttons a:last-child{
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+header .menu2{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+    background-color: deeppink;
+}
+
+header .menu2 .menuSelf {
+    background-color: gold;
+    height: 100%;
+}
+header .menu2 .menuSelf .menu__list {
+    background-color: aqua;
+    height: 100%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+}
+header .menu2 .menuSelf .menu__list .menu__item{
+    background-color: lime;
+    height: 100%;
+    padding: 0 16px;
+    font-size: 14px;
+    display: flex;
+    color: black;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    text-decoration: none;    
 }

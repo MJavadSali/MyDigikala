@@ -13,3 +13,83 @@ header .banner img {
     height: 100%;
     object-fit: cover;
 }
+
+
+header .menu1{
+    width: 100%;
+    height: 68px;
+    padding: 0 16px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+header .menu1 .logo{
+    height: 100%;
+    align-items: center;
+    display: flex;
+    margin-left: 20px;
+}
+
+header .menu1 .search{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+}
+
+header .menu1 .search form{
+    height: 100%;
+}
+header .menu1 .search form label{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    
+    position: relative;
+}
+header .menu1 .search form label svg{
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+header .menu1 .search form label input{
+    width: 600px;
+    height: 44px;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    padding-right: 56px;
+}
+
+header .menu1 .search form label input img{
+    display: none;
+}
+
+header .menu1 .buttons{
+    margin-right: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+header .menu1 .buttons a:first-child{
+    border:1px solid #a1a3a8;
+    border-radius:8px;
+    display: flex;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    text-decoration: none;
+    color: black;
+    padding: 0 16px;
+    
+}
+
+header .menu1 .buttons a:last-child{
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
