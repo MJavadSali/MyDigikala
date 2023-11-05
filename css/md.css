@@ -14,3 +14,65 @@ header .banner img {
     height: 100%;
     object-fit: cover;
 }
+header .menu1{
+    width: 100%;
+    height: 68px;
+    padding: 0 16px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+header .menu1 .logo{
+
+    display: none;
+}
+
+header .menu1 .search{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+}
+
+header .menu1 .search form{
+    width: 100%;
+    height: 100%;
+}
+header .menu1 .search form label{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    
+    position: relative;
+}
+header .menu1 .search form label svg{
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+header .menu1 .search form label input{
+    width: 100%;
+    height: 44px;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    padding-right: 56px;
+}
+
+header .menu1 .search form label input img{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 110px;
+    width: 90px;
+    height: 24px;
+}
+
+header .menu1 .buttons{
+
+    display: none;
+}

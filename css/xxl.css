@@ -61,12 +61,12 @@ header .menu1 .search form label input{
     border: none;
     border-radius: 8px;
     padding-right: 56px;
+    background-color: rgb(240, 240, 241);
 }
 
-header .menu1 .search form label input img{
+header .menu1 .search form label img{
     display: none;
 }
-
 
 header .menu1 .buttons{
     margin-right: auto;
@@ -102,31 +102,99 @@ header .menu2{
     align-items: center;
     justify-content: space-between;
     padding: 0 16px;
-    background-color: deeppink;
 }
 
 header .menu2 .menuSelf {
-    background-color: gold;
     height: 100%;
 }
 header .menu2 .menuSelf .menu__list {
-    background-color: aqua;
     height: 100%;
     list-style: none;
     display: flex;
     align-items: center;
     gap: 8px;
-    font-size: 14px;
+    background-color: aqua;
+  
 }
+
 header .menu2 .menuSelf .menu__list .menu__item{
-    background-color: lime;
     height: 100%;
-    padding: 0 16px;
     font-size: 14px;
     display: flex;
     color: black;
     align-items: center;
     justify-content: center;
+    align-items: center;
     gap: 4px;
-    text-decoration: none;    
+    text-decoration: none;
+    position: relative;
+}
+header .menu2 .menuSelf .menu__list .menu__item::after {
+    content: "";
+    display: block; 
+    width: 100%;
+    height: 2px;
+    background-color: red;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transition: all 300ms linear;
+    transform-origin: left;
+}
+header .menu2 .menuSelf .menu__list .menu__item:hover::after {
+    transform: scaleX(1);
+}
+header .menu2 .menuSelf .menu__list .menu__item .menu__link{
+    height: 100%;
+    padding: 0 16px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+
+header .menu2 .city{
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+}
+header .menu2 .menuSelf .menu__list .menu__item:first-child .menu3{
+    width: 150%;
+    height: calc(95dvh-168px);
+    position: absolute;
+    top: 100%;
+    right: 0;
+}
+header .menu2 .menuSelf .menu__list .menu__item:first-child .menu3 .menu3__nav{
+    width: 100%;
+    height: 100%;
+}
+header .menu2 .menuSelf .menu__list .menu__item:first-child .menu3 .menu3__nav .menu3__list{
+    width: 100%;
+    height: 100%;
+    list-style: none;
+}
+
+header .menu2 .menuSelf .menu__list .menu__item:first-child .menu3 .menu3__nav .menu3__list .menu3__item{
+    width: 100%;
+    height: 50px;
+    
+}
+header .menu2 .menuSelf .menu__list .menu__item:first-child .menu3 .menu3__nav .menu3__list .menu3__item .menu3__link{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    padding-right: 16px;
+    text-decoration: none;
+    color: black;
+    background-color: #f1f1f1;
+}
+
+header .menu2 .menuSelf .menu__list .menu__item:first-child .menu3 .menu3__nav .menu3__list .menu3__item .menu3__link:hover{
+    background-color: white;
+    color: red;
 }
