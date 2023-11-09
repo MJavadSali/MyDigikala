@@ -283,6 +283,7 @@ header .menu2 .menuSelf .menu__list .menu__item:first-child .menu3 .menu3__nav .
 }
 .miniMenu{
     display: none;
+<<<<<<< HEAD
 }
 
 .cityCover{
@@ -344,4 +345,6 @@ header .menu2 .menuSelf .menu__list .menu__item:first-child .menu3 .menu3__nav .
     height: 100%;
     background-color: aqua;
     list-style:none;
+=======
+>>>>>>> bbcb7e29cca688c63cf8d6c7fc3ddc6f46417115
 }
