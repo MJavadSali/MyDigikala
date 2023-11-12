@@ -86,6 +86,7 @@ header .menu2{
    position: fixed;
    bottom: 0;
    left: 0;
+   z-index: 1000;
 }
 
 .miniMenu .miniMenu__nav {
@@ -119,3 +120,106 @@ header .menu2{
 .miniMenu .miniMenu__nav .miniMenu__list .miniMenu__item:first-child .link{
     color: black;
 }
+
+
+.slider2{
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(to top ,#ef4056,#ef394e);
+    border-radius: 16px;
+    padding: 20px;
+}
+
+
+.slider2 .swiper {
+    width: 100%;
+    height: 100%;
+    
+  }
+
+  .slider2 .swiper-slide {
+    flex-basis: 154px;
+    height: 100%;
+    text-align: center;
+    flex-shrink: 0;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.slider2 .swiper-slide:first-child{
+    flex-basis: 145px;
+    background-color: transparent;
+    flex-flow: column nowrap;
+    gap: 8px;
+}
+.slider2 .swiper-slide:nth-of-type(2){
+    border-radius:0 8px 8px 0;
+}
+.slider2 .swiper-slide:nth-last-of-type(1){
+    border-radius:8px 0px 0px 8px;
+    font-size: 16px;
+    color: blue;
+}
+
+.slider2 .swiper-slide:not(:first-of-type) a{
+    text-decoration: none;
+    padding: 12px 16px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    
+}
+.slider2 .swiper-slide:not(:first-of-type) a .img{
+    margin-bottom: 20px;
+}
+.slider2 .swiper-slide:not(:first-of-type) a .price{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+     flex-flow: row-reverse ;
+}
+.slider2 .swiper-slide:not(:first-of-type) a .price .exact__price{
+    font-weight: bold; 
+}
+.slider2 .swiper-slide:not(:first-of-type) a .price .discount{
+    background: #ef394e;
+    color: white;
+    font-size: 12px;
+    padding: 2px 8px;
+    border-radius: 10px;
+}
+.slider2 .swiper-slide:not(:first-of-type) a del{
+    display: block;
+    width: 100%;
+    text-align: left;
+    font-size: 12px;
+    color: #cbc9c9;
+    margin-top: 4px;
+}
+
+.slider2 .swiper-slide:first-child img:first-child{
+    width: 92px;
+    height: 77px;
+}
+.slider2 .swiper-slide:first-child img:last-of-type{
+    width: 145px;
+    height: 115px;
+}
+
+.slider2 .swiper-slide:first-child a{
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    margin-top: 14px;
+}
+
+.slider2  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
