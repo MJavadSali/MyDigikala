@@ -1,12 +1,11 @@
 header{
     width: 100%;
-    height: 60px;
     background-color: white;
 }
 
 header .banner{
     width: 100%;
-    height: 100%;
+    height: 60px;
 }
 
 header .banner img {
@@ -283,7 +282,6 @@ header .menu2 .menuSelf .menu__list .menu__item:first-child .menu3 .menu3__nav .
 }
 .miniMenu{
     display: none;
-<<<<<<< HEAD
 }
 
 .cityCover{
@@ -293,9 +291,9 @@ header .menu2 .menuSelf .menu__list .menu__item:first-child .menu3 .menu3__nav .
     background-color: rgba(0, 0, 0, 0.1);
     top: 0;
     left: 0;
-    display: flex;
     align-items: center;
     justify-content: center;
+    display: none;
 }
 .cityCover .cities{
     width: 460px;
@@ -336,15 +334,265 @@ header .menu2 .menuSelf .menu__list .menu__item:first-child .menu3 .menu3__nav .
 }
 .cityCover .cities .cities__nav{
     width: 100%;
-    height: 100%;
-    background-color: deeppink;
+    height: calc(100% - 58px);
 }
 
 .cityCover .cities .cities__nav .cities__list{
     width: 100%;
     height: 100%;
-    background-color: aqua;
     list-style:none;
-=======
->>>>>>> bbcb7e29cca688c63cf8d6c7fc3ddc6f46417115
+    padding: 0 20px;
+    overflow: auto;
+    direction: ltr;
 }
+.cityCover .cities .cities__nav .cities__list .cities__item{
+    width: 100%;
+    height: 56px;
+    border-bottom:1px solid #eeeeee;
+    direction: rtl;
+}
+
+.cityCover .cities .cities__nav .cities__list .cities__item .cities__link{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    color: black;
+}
+
+#openCity:checked ~ .cityCover{
+    display: flex;
+    animation: fadeIn 300ms linear forwards;
+} 
+#close:checked ~ .cityCover{
+    display: none;
+}
+#openCity,#closeCity{
+    display: none;
+}
+
+.stories{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;    
+    justify-content: center;
+    gap: 80px;
+}
+
+.stories .story{
+    flex-basis: 80px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+.stories .story .img{
+    width: 100%;
+    height: 80px;
+    border-radius: 50%;
+    padding: 3px;
+    border: 3px solid red;
+}
+.stories .story .img img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.stories .story span{
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider1 {
+    width: 100%;
+    height: 600px;  
+}
+.silder1 .swiper {
+    width: 100%;
+    height: 100%;
+}
+  
+.silder1 .swiper-slide {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .silder1 .swiper-slide a{
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+.silder1 .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.services{
+    margin-bottom: 20px;
+    background-color: greenyellow;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.services .service{
+    background-color: aqua;
+}
+.services .service a{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    gap: 8px;
+    color: black;
+}
+
+.services .service a .img{
+    width: 52px;
+    height: 52px;
+}
+
+
+.services .service a .img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.services .service a span{
+    font-size:12px;
+}
+.services .service:last-of-type .circle{
+    width: 52px;
+    height: 52px;
+    background-color: #e0e0e0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+} 
+.services .service:last-of-type .circle .miniC{
+    width: 5px;
+    height: 5px;
+    background-color: #a1a3a8;
+    border-radius: 50%;
+}
+
+.slider2{
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(to top ,#ef4056,#ef394e);
+    border-radius: 16px;
+    padding: 20px;
+}
+
+
+.slider2 .swiper {
+    width: 100%;
+    height: 100%;
+    
+}
+.slider2 .swiper-slide {
+    flex-basis: 182px;
+    height: 100%;
+    text-align: center;
+    flex-shrink: 0;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slider2 .swiper-slide:first-child{
+    flex-basis: 173px;
+    background-color: transparent;
+    flex-flow: column nowrap;
+    gap: 8px;
+}
+.slider2 .swiper-slide:nth-of-type(2){
+    border-radius:0 8px 8px 0;
+}
+.slider2 .swiper-slide:nth-last-of-type(1){
+    border-radius:8px 0px 0px 8px;
+    font-size: 16px;
+    color: blue;
+}
+
+.slider2 .swiper-slide:not(:first-of-type) a{
+    text-decoration: none;
+    padding: 12px 16px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    
+}
+.slider2 .swiper-slide:not(:first-of-type) a .img{
+    margin-bottom: 20px;
+}
+.slider2 .swiper-slide:not(:first-of-type) a .price{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+     flex-flow: row-reverse ;
+}
+.slider2 .swiper-slide:not(:first-of-type) a .price .exact__price{
+    font-weight: bold; 
+}
+.slider2 .swiper-slide:not(:first-of-type) a .price .discount{
+    background: #ef394e;
+    color: white;
+    font-size: 12px;
+    padding: 2px 8px;
+    border-radius: 10px;
+}
+.slider2 .swiper-slide:not(:first-of-type) a del{
+    display: block;
+    width: 100%;
+    text-align: left;
+    font-size: 12px;
+    color: #cbc9c9;
+    margin-top: 4px;
+}
+
+.slider2 .swiper-slide:first-child img:first-child{
+    width: 92px;
+    height: 77px;
+}
+.slider2 .swiper-slide:first-child img:last-of-type{
+    width: 145px;
+    height: 115px;
+}
+
+.slider2 .swiper-slide:first-child a{
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    margin-top: 14px;
+}
+
+.slider2  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
