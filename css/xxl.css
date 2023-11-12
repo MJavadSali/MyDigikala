@@ -445,13 +445,12 @@ header .menu2 .menuSelf .menu__list .menu__item:first-child .menu3 .menu3__nav .
 }
 .services{
     margin-bottom: 20px;
-    background-color: greenyellow;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 .services .service{
-    background-color: aqua;
+    background-color: white;
 }
 .services .service a{
     display: flex;
