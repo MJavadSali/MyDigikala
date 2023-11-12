@@ -13,3 +13,10 @@ body{
     margin: 0 auto;
     padding-top: 20px;
 }
+html{
+    scroll-behavior: smooth;
+}
+
+main{
+    padding-top: 150px;
+}

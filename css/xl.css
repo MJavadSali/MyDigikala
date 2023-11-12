@@ -1,7 +1,10 @@
 header{
     width: 100%;
     background-color: white;
-     
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10000000;
 }
 header .banner{
     width: 100%;
@@ -113,7 +116,7 @@ header .menu2 .menuSelf .menu__list {
     display: flex;
     align-items: center;
     gap: 6px;
-    background-color: aqua;
+    
   
 }
 
@@ -155,7 +158,7 @@ header .menu2 .menuSelf .menu__list .menu__item .menu__link{
 }
 
 header .menu2 .city{
-    background-color: aqua;
+    
     display: flex;
     align-items: center;
     gap: 8px;
@@ -385,6 +388,7 @@ header .menu2 .menuSelf .menu__list .menu__item:first-child .menu3 .menu3__nav .
     align-items: center;    
     justify-content: center;
     gap: 80px;
+
 }
 
 .stories .story{
@@ -448,6 +452,59 @@ header .menu2 .menuSelf .menu__list .menu__item:first-child .menu3 .menu3__nav .
     height: 100%;
     object-fit: cover;
   }
+
+  .services{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.services .service{
+    background-color: white;
+}
+.services .service a{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    gap: 8px;
+    color: black;
+}
+
+.services .service a .img{
+    width: 52px;
+    height: 52px;
+}
+
+
+.services .service a .img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.services .service a span{
+    font-size:12px;
+}
+.services .service:last-of-type .circle{
+    width: 52px;
+    height: 52px;
+    background-color: #e0e0e0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+} 
+.services .service:last-of-type .circle .miniC{
+    width: 5px;
+    height: 5px;
+    background-color: #a1a3a8;
+    border-radius: 50%;
+}
 
   .slider2{
     width: 100%;
@@ -548,4 +605,33 @@ header .menu2 .menuSelf .menu__list .menu__item:first-child .menu3 .menu3__nav .
     width: 100%;
     height: 100%;
     object-fit: cover;
+  }
+
+  
+.slider3{
+    padding: 10px;
+    margin-top: 20px;
+    width: 100%;
+    height: 404px;
+    background-color: #ef394e;
+}
+
+.slider3 .swiper {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+ }
+
+.slider3 .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    border-bottom: 1px solid black;
+    height: calc((100%) / 3) !important;
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
   }
